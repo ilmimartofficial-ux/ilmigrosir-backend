@@ -1,7 +1,7 @@
 const express = require('express');
 const router  = express.Router();
 const { GoogleGenerativeAI } = require("@google/generative-ai");
-const db      = require('./database');
+const db = require('../db/database');
 
 // Inisialisasi Gemini (Pastikan GEMINI_API_KEY sudah ada di Variables Railway)
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY || '');
